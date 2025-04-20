@@ -6,7 +6,7 @@ from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 # Define Admin ID
-ADMIN_ID = "7962308718"  # Replace with the actual Telegram user ID of the admin
+ADMIN_ID = "7497210291"  # Replace with the actual Telegram user ID of the admin
 
 # In-memory database (persistent)
 DATA_FILE = "user_data.json"
